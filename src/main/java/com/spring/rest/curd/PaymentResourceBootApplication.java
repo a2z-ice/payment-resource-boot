@@ -6,7 +6,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
 @SpringBootApplication
-@EnableJpaRepositories(basePackages = "com.spring.rest.curd.dao")
 public class PaymentResourceBootApplication {
 
 	public static void main(String[] args) {
