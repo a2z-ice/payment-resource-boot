@@ -1,24 +1,18 @@
 # Spring Datasource Configuration
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test
     username: root
     password: cisco
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQL5Dialect
         default_schema: public
         show_sql: true
         format_sql: true
         hbm2ddl:
           auto: create
-# Hibernate Configuration
-#hibernate:
-#  dialect: org.hibernate.dialect.MySQL5Dialect
-#  show_sql: true
-#  hbm2ddl.auto: create  # You can change this to "create" if you want to recreate the schema on each run
 
 # Spring MVC Configuration
 
