@@ -26,4 +26,3 @@ spring:
 # Server Configuration
 server:
   port: 8080  # You can change the port as needed
-

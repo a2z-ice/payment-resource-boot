@@ -1,12 +1,14 @@
 package com.spring.rest.curd.service;
 
 import com.spring.rest.curd.dao.PaymentDao;
+import com.spring.rest.curd.dao.PaymentRepo;
 import com.spring.rest.curd.dto.PaymentResponse;
 import com.spring.rest.curd.model.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -15,7 +17,7 @@ import java.util.List;
 @Transactional
 public class PaymentService {
 	@Autowired
-	private PaymentDao dao;
+	private PaymentRepo dao;
 
 	public PaymentResponse pay(Payment payment) {
 		payment.setPaymentDate(new Date());
